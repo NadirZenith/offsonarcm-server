@@ -1,0 +1,9 @@
+Application\Sonata\MediaBundle\Entity\Media:
+  exclusion_policy: ALL
+  xml_root_name: media
+  properties:
+    id:
+      expose: true
+      type: integer
+      groups: [standard, restapi]
+    

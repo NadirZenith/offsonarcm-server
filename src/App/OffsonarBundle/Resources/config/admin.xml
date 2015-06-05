@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="sonata.admin.event" class="App\OffsonarBundle\Admin\EventAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Content" label="Event"/>
+            <argument />
+            <argument>App\OffsonarBundle\Entity\Event</argument>
+            <argument />
+            <call method="setTranslationDomain">
+                <argument>AppOffsonarBundle</argument>
+            </call>
+        </service>
+    </services>
+</container>

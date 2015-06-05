@@ -1,0 +1,30 @@
+App\OffsonarBundle\Entity\Event:
+  exclusion_policy: none
+  xml_root_name: event
+  properties:
+    id:
+      expose: true
+      type: integer
+      groups: [standard, restapi]
+    title:
+      expose: true
+      type: string
+      groups: [standard, restapi]
+    price:
+      expose: true
+      type: string
+      groups: [standard, restapi]
+    content:
+      expose: true
+      type: string
+      groups: [standard, restapi]
+    status:
+      exclude: true
+      type: boolean
+      groups: [standard, restapi]
+    flyer:
+      exclude: true
+    flyerUrl:
+      expose: true
+      type: array
+        
